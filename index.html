@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamila Artyszko</title>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400&family=Saira:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.scrollTo.min.js"></script>
+  
+  <script>
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+
+      $('#scrolltome').click(function() {$.scrollTo($('#meetme'), 1000); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+    
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>400) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);
+  </script>
+  
+</head>
+<body>
+<header>
+  <div class="welcome">
+    <p>Hello,</p>
+    <h1>I'm Kamila Artyszko.</h1>
+    <h2>front-end developer</h2>
+    <a id="scrolltome" href="#">meet me</a>
+  </div>
+  <img src="img/male.png" alt="photo with Kamila Artyszko">
+</header>
+
+<section class="features clearfix">
+  <h1>What are my superpowers?</h1>
+  <div class="feature">
+    <i class="fab fa-html5 html"></i>
+    <h2>HTML 5</h1>
+  </div>
+  <div class="feature">
+    <i class="fab fa-css3-alt"></i>
+    <h2>CSS 3</h1>
+  </div>
+  <div class="feature">
+    <i class="fab fa-js"></i>
+    <h2>JavaScript</h1>
+  </div>
+  <div class="feature responsive">
+    <i class="fas fa-tablet-alt"></i><i class="fas fa-desktop"></i><i class="fas fa-mobile-alt"></i>
+    <h2>Responsive Web Design</h1>
+  </div>
+  <div style="clear: both;"></div>
+  <p> And I am still learning...</p>
+</section>
+<section class="aboutme">
+<h1 id="meetme">about me</h1>
+<h2>meet me</h2>
+<p class="text">Hi, my name is Kamila and programming became my love at the first sight. I graduated from Poznan University of Technology with Engineer's degree. However, web development became my main interest so I decided tostudy this topic more thoroughly. I am a self-learning person and when I do something, I want to be the best version of myself - that's why I'm about to start.  My goal is to combine hobby with a professional career, in which I would be able to gather experience in a commercial environment, further improve my skills and have the chance to learn new technologies.</p>
+<p>I'm currently looking for a job as a Junior Frontend Developer.</p>
+</section>
+
+<section class="hobby clearfix">
+  <h1>My hobby</h1>
+  <div class="item">
+    <p>Hiking</p>
+  </div>
+  <div class="item">
+    <p>Travel</p>
+  </div>
+  <div class="item">
+    <p>Good food</p>
+  </div>
+  <div class="item">
+    <p>Active lifestyle</p>
+  </div>
+</section>
+<section class="contact">
+  <h1>contact information</h1>
+  <h2>feel free to ask</h2>
+  <div class="socials">
+    <div class="social">
+      <i class="fas fa-envelope"></i><span>artykamila@interia.pl</span>
+    </div>
+    <div class="social">
+      <i class="fas fa-mobile-alt"></i><span>+48 731 768 203</span>
+    </div>
+    <div class="social">
+      <i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/kamila.artyszko/" target="_blank">kamila.artyszko</a>
+    </div>
+    <div class="social">
+      <i class="fab fa-github-square"></i><a href="https://github.com/kartyszko" target="_blank">kartyszko</a>
+    </div>
+    <div class="social">
+      <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/kamila-artyszko-68b4551b7/" target="_blank">Kamila Artyszko</a>
+    </div>
+  </div>
+</section>
+
+<a href="#" class="scrollup"></a>
+
+<footer>&copy; Kamila Artyszko 2020</footer>
+
+</body>
+</html>
